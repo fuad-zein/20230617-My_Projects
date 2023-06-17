@@ -1,3 +1,3 @@
-## **`My Project Collections`**
+## **My Project Collections**
 
-1. [`Analogue Clock`](analogue-clock/)
+- [`Analogue Clock`](analogue-clock/)
