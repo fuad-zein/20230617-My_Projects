@@ -21,8 +21,17 @@
   <body>
     <div class="container">
       <h2>Login</h2>
+      <!-- username -->
       <input type="text" placeholder="Username" id="username" />
+
+      <!-- password -->
       <input type="password" placeholder="Password" id="password" />
+
+      <!-- show password -->
+      <input type="checkbox" onclick="showPassword()" id="show-password" />
+      <label for="show-password"> Show Password</label>
+
+      <!-- submit -->
       <button id="submit">Submit</button>
       <p id="message-ref">Signed Up Successfully...</p>
     </div>

@@ -32,10 +32,10 @@ usernameRef.addEventListener("input", () => {
   if (!isUsernameValid()) {
     messageRef.style.visibility = "hidden";
     usernameRef.style.cssText =
-      "border-color: #fe2e2e; background-color: #ffc2c2";
+      "border-color: #fe2e2e; border-radius: 0.3em; background-color: #ffc2c2";
   } else {
     usernameRef.style.cssText =
-      "border-color: #34bd34; background-color: #c2ffc2";
+      "border-color: #34bd34; border-radius: 0.3em; background-color: #c2ffc2";
   }
 });
 
@@ -43,10 +43,10 @@ passwordRef.addEventListener("input", () => {
   if (!isPasswordValid()) {
     messageRef.style.visibility = "hidden";
     passwordRef.style.cssText =
-      "border-color: #fe2e2e; background-color: #ffc2c2";
+      "border-color: #fe2e2e; border-radius: 0.3em; background-color: #ffc2c2";
   } else {
     passwordRef.style.cssText =
-      "border-color: #34bd34; background-color: #c2ffc2";
+      "border-color: #34bd34; border-radius: 0.3em; background-color: #c2ffc2";
   }
 });
 
@@ -74,3 +74,11 @@ submitBtn.addEventListener("mouseover", () => {
 submitBtn.addEventListener("click", () => {
   messageRef.style.visibility = "visible";
 });
+
+let showPassword = () => {
+  if (passwordRef.type === "password") {
+    passwordRef.type = "text";
+  } else {
+    passwordRef.type = "password";
+  }
+};
