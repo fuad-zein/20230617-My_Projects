@@ -22,17 +22,23 @@
     <div class="container">
       <h2>Login</h2>
       <!-- username -->
+      <label for="username" id="username-label"
+        >*more than 3 chars & begin alphabetic - number</label
+      >
       <input type="text" placeholder="Username" id="username" />
 
       <!-- password -->
+      <label for="password" id="password-label"
+        >*min. 8 char, number, symbol, lower & upper case</label
+      >
       <input type="password" placeholder="Password" id="password" />
 
       <!-- show password -->
       <input type="checkbox" onclick="showPassword()" id="show-password" />
-      <label for="show-password"> Show Password</label>
+      <label for="show-password">Show Password</label>
 
       <!-- submit -->
-      <button id="submit">Submit</button>
+      <button id="submit" class="btn effect">Submit</button>
       <p id="message-ref">Signed Up Successfully...</p>
     </div>
 

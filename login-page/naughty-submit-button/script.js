@@ -4,7 +4,9 @@
  */
 
 let usernameRef = document.getElementById("username");
+let usernameLabel = document.getElementById("username-label");
 let passwordRef = document.getElementById("password");
+let passwordLabel = document.getElementById("password-label");
 let submitBtn = document.getElementById("submit");
 let messageRef = document.getElementById("message-ref");
 
@@ -33,9 +35,11 @@ usernameRef.addEventListener("input", () => {
     messageRef.style.visibility = "hidden";
     usernameRef.style.cssText =
       "border-color: #fe2e2e; border-radius: 0.3em; background-color: #ffc2c2";
+    usernameLabel.style.cssText = "color: red";
   } else {
     usernameRef.style.cssText =
       "border-color: #34bd34; border-radius: 0.3em; background-color: #c2ffc2";
+    usernameLabel.style.cssText = "color: green;";
   }
 });
 
@@ -44,9 +48,11 @@ passwordRef.addEventListener("input", () => {
     messageRef.style.visibility = "hidden";
     passwordRef.style.cssText =
       "border-color: #fe2e2e; border-radius: 0.3em; background-color: #ffc2c2";
+    passwordLabel.style.cssText = "color: red";
   } else {
     passwordRef.style.cssText =
       "border-color: #34bd34; border-radius: 0.3em; background-color: #c2ffc2";
+    passwordLabel.style.cssText = "color: green";
   }
 });
 

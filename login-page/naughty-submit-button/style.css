@@ -41,16 +41,16 @@ h2 {
   background-color: transparent;
   margin-bottom: 2em;
   font-size: 20px;
-  padding: 1em 0 0.5em 0.5em;
+  padding: 0.5em 0 0.5em 0.5em;
   border-bottom: 2px solid #202020;
 }
 
 #password {
   width: 100%;
   background-color: transparent;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-size: 20px;
-  padding: 1em 0 0.5em 0.5em;
+  padding: 0.5em 0 0.5em 0.5em;
   border-bottom: 2px solid #202020;
 }
 
@@ -72,7 +72,7 @@ label {
   font-size: 15px;
 }
 
-#submit {
+.btn {
   position: relative;
   left: 0;
   font-size: 1.1em;
@@ -82,6 +82,23 @@ label {
   padding: 0.8em 0;
   margin-top: 2em;
   border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-weight: bold;
+  color: #fff;
+  outline: 0;
+}
+
+.effect {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+.effect:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 #message-ref {
